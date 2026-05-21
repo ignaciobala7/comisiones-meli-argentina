@@ -13,8 +13,8 @@ from collections import defaultdict
 import sys, os, time, json
 from datetime import datetime
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import consulta_comisiones as backend
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from src.core import comisiones as backend
 
 # ─────────────────────────────────────────────
 # FUNCIONES DE CALCULO CLAVE

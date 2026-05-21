@@ -25,14 +25,14 @@ try:
 except Exception:
     pass
 
-import consulta_comisiones as backend
+from src.core import comisiones as backend
 
 # ============================================================
 # CONSTANTES
 # ============================================================
 
-DIR           = os.path.dirname(os.path.abspath(__file__))
-CONFIG_FILE   = os.path.join(DIR, "configuracion.json")
+BASE_DIR      = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CONFIG_FILE   = os.path.join(BASE_DIR, "configuracion.json")
 REDIRECT_PORT = 8888
 REDIRECT_URI  = f"http://localhost:{REDIRECT_PORT}"
 AUTH_URL      = "https://auth.mercadolibre.com.ar/authorization"
@@ -1052,7 +1052,7 @@ class TabExcel(ttk.Frame):
         self.var_prog_txt.set("Iniciando análisis de márgenes...")
         self._log("━━━ ANALISIS DE MARGENES FLEXXUS vs MeLi ━━━")
 
-        import analizar_margenes as am
+        from src.core import margenes as am
 
         def progress_cb(i, total, desc):
             pct = i / total * 100
@@ -1969,7 +1969,7 @@ class TabRubros(ttk.Frame):
 
     # ── Cache ─────────────────────────────────────────────────
 
-    CACHE_FILE = os.path.join(DIR, "cache_rubros.json")
+    CACHE_FILE = os.path.join(BASE_DIR, "cache_rubros.json")
 
     def _guardar_cache(self, ruta_arch):
         try:
