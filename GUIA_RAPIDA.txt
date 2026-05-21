@@ -1,0 +1,104 @@
+════════════════════════════════════════════════════════
+  GUIA RAPIDA — COMISIONES MERCADO LIBRE ARGENTINA
+════════════════════════════════════════════════════════
+
+COMO ABRIR LA APP
+──────────────────
+  Doble click en:  iniciar.bat
+  (o ejecutar:  python app.py)
+
+
+PRIMERA VEZ — CONECTAR TU CUENTA MELI
+────────────────────────────────────────
+  Para tener comisiones exactas en tiempo real desde MeLi:
+
+  1. Abrir la app  →  hacer click en  ⚙ Configurar API
+
+  2. Hacer click en  "Abrir portal de desarrolladores MeLi"
+
+  3. Iniciar sesion con tu cuenta de MeLi
+
+  4. Click en  "Crear aplicacion"
+       Nombre: cualquiera (ej: "Mi Stock")
+       URI de redireccion: escribir exactamente  http://localhost:8888
+       Guardar
+
+  5. Copiar el  "App ID"  y el  "Secret Key"  que aparecen
+
+  6. Pegarlos en los campos de la app y hacer click en  "Conectar cuenta MeLi"
+
+  7. Se abre el navegador → loguear con tu cuenta MeLi → autorizar
+
+  8. Listo! La barra superior se pone VERDE:
+     "Conectado a la API de MeLi — comisiones en tiempo real"
+
+  El token dura 6 horas y se renueva automatico. Solo necesitas
+  reconectar si pasan muchos dias sin usar la app.
+
+
+CONSULTA INDIVIDUAL (pestaña izquierda)
+─────────────────────────────────────────
+  Para consultar la comision de UN producto:
+
+  1. Escribir el nombre del producto (ej: "celular samsung", "notebook")
+  2. Click en  "Buscar en MeLi"
+  3. Seleccionar la categoria correcta del dropdown
+  4. Ingresar el precio de venta y el costo
+  5. Poner el margen que queres (default: 20%)
+  6. Click en  "CALCULAR COMISIONES"
+
+  Te muestra para CLASICA y PREMIUM:
+    - Comision % y en pesos
+    - Lo que cobras neto
+    - Tu margen real
+    - El precio al que publicar para llegar a tu margen objetivo
+
+
+PROCESAR PLANILLA EXCEL (pestaña derecha)
+──────────────────────────────────────────
+  Para analizar TODO tu stock de Flexxus de una sola vez:
+
+  1. Exportar desde Flexxus con estas columnas:
+       CODIGO, DESCRIPCION, RUBRO, SUB_RUBRO, PRECIO_VENTA, COSTO_NETO, STOCK
+       (los nombres pueden variar, se detectan automatico)
+
+  2. En la app:  click en  "Elegir Archivo"  →  seleccionar tu Excel
+
+  3. Poner el margen objetivo (ej: 20)
+
+  4. Click en  "PROCESAR Y GENERAR ANALISIS"
+       Esperar entre 30 segundos y 2 minutos segun la cantidad de productos
+
+  5. Al terminar:  click en  "Abrir Excel con Resultados"
+
+  El Excel que se genera tiene 3 hojas:
+    - "Analisis Comisiones":   una fila por producto, con Clasica y Premium
+    - "Resumen por Categoria": totales y promedios por rubro
+    - "Instrucciones":         como leer cada columna
+
+  COLORES:
+    Verde   = tu margen es igual o mayor al objetivo → podes publicar a ese precio
+    Amarillo = margen positivo pero menor al objetivo → evaluar si conviene
+    Rojo    = margen negativo → perdes plata a ese precio
+
+
+PREGUNTAS FRECUENTES
+──────────────────────
+  Q: La barra sale en ROJO ("Sin API")
+  A: No conectaste la cuenta MeLi todavia.
+     Igual funciona con la tabla de tasas locales.
+     Para conectar: click en ⚙ Configurar API y seguir los pasos de arriba.
+
+  Q: La barra sale en AMARILLO ("Token vencido")
+  A: El token expiro. Click en ⚙ Configurar API → "Conectar cuenta MeLi"
+
+  Q: La categoria que aparece en el resultado no parece correcta
+  A: El sistema busca automaticamente la categoria mas parecida al rubro
+     de tu Flexxus. Podes cambiarla en el dropdown en la consulta individual.
+     En el Excel de salida figura el ID de categoria para que lo verifiques.
+
+  Q: El Excel de Flexxus no se procesa bien
+  A: Asegurate de que tenga columnas con "precio" y "rubro" en el nombre.
+     Si no las detecta automatico, el sistema te pregunta cual es cual.
+
+════════════════════════════════════════════════════════

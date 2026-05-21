@@ -1,0 +1,56 @@
+{
+  "_info": {
+    "ultima_actualizacion": "2025-05",
+    "fuente": "https://www.mercadolibre.com.ar/ayuda/costos-de-vender",
+    "nota": "Verificar periodicamente en el sitio oficial de MeLi. Las comisiones pueden cambiar.",
+    "tipos_publicacion": {
+      "Clasica": "gold_special",
+      "Premium": "gold_pro"
+    }
+  },
+  "_nota_tasas": "Tasas verificadas via API real de MeLi Argentina (cuenta CLUBDIGITALSTORE). Premium = gold_pro.",
+  "_default": {
+    "Clasica": 15.5,
+    "Premium": 28.2
+  },
+  "categorias": {
+    "Celulares y Telefonos":           { "Clasica": 12.5, "Premium": 25.2 },
+    "Celulares y Teléfonos":           { "Clasica": 12.5, "Premium": 25.2 },
+    "Computacion":                     { "Clasica": 15.5, "Premium": 28.2 },
+    "Computación":                     { "Clasica": 15.5, "Premium": 28.2 },
+    "Electronica, Audio y Video":      { "Clasica": 15.5, "Premium": 28.2 },
+    "Electrónica, Audio y Video":      { "Clasica": 15.5, "Premium": 28.2 },
+    "Camaras y Accesorios":            { "Clasica": 15.5, "Premium": 28.2 },
+    "Cámaras y Accesorios":            { "Clasica": 15.5, "Premium": 28.2 },
+    "Consolas y Videojuegos":          { "Clasica": 15.5, "Premium": 28.2 },
+    "Musica, Peliculas y Series":      { "Clasica": 15.5, "Premium": 28.2 },
+    "Música, Películas y Series":      { "Clasica": 15.5, "Premium": 28.2 },
+    "Industrias y Oficinas":           { "Clasica": 15.5, "Premium": 28.2 },
+    "Electrodomesticos y Aires Ac.":   { "Clasica": 14.0, "Premium": 26.7 },
+    "Electrodomésticos y Aires Ac.":   { "Clasica": 14.0, "Premium": 26.7 },
+    "Hogar, Muebles y Jardin":         { "Clasica": 14.0, "Premium": 26.7 },
+    "Hogar, Muebles y Jardín":         { "Clasica": 14.0, "Premium": 26.7 },
+    "Construccion":                    { "Clasica": 14.0, "Premium": 26.7 },
+    "Construcción":                    { "Clasica": 14.0, "Premium": 26.7 },
+    "Herramientas":                    { "Clasica": 14.0, "Premium": 26.7 },
+    "Deportes y Fitness":              { "Clasica": 15.5, "Premium": 28.2 },
+    "Juguetes y Hobbies":              { "Clasica": 15.5, "Premium": 28.2 },
+    "Arte, Papeleria y Artesanias":    { "Clasica": 15.5, "Premium": 28.2 },
+    "Arte, Papelería y Artesanías":    { "Clasica": 15.5, "Premium": 28.2 },
+    "Animales y Mascotas":             { "Clasica": 15.5, "Premium": 28.2 },
+    "Antiguedades y Colecciones":      { "Clasica": 15.5, "Premium": 28.2 },
+    "Antigüedades y Colecciones":      { "Clasica": 15.5, "Premium": 28.2 },
+    "Bebes":                           { "Clasica": 15.5, "Premium": 28.2 },
+    "Bebés":                           { "Clasica": 15.5, "Premium": 28.2 },
+    "Libros, Revistas y Comics":       { "Clasica": 15.5, "Premium": 28.2 },
+    "Salud y Equipamiento Medico":     { "Clasica": 15.5, "Premium": 28.2 },
+    "Salud y Equipamiento Médico":     { "Clasica": 15.5, "Premium": 28.2 },
+    "Ropa y Accesorios":               { "Clasica": 15.5, "Premium": 28.2 },
+    "Calzado, Ropa y Bolsos":          { "Clasica": 15.5, "Premium": 28.2 },
+    "Belleza y Cuidado Personal":      { "Clasica": 15.5, "Premium": 28.2 },
+    "Relojes y Joyeria":               { "Clasica": 16.0, "Premium": 28.7 },
+    "Relojes y Joyería":               { "Clasica": 16.0, "Premium": 28.7 },
+    "Alimentos y Bebidas":             { "Clasica": 12.5, "Premium": 25.2 },
+    "Autos, Motos y Otros":            { "Clasica":  3.0, "Premium": 15.7 }
+  }
+}
