@@ -32,8 +32,8 @@ except AttributeError:
 
 SITE_ID  = "MLA"
 BASE_URL = "https://api.mercadolibre.com"
-DIR      = os.path.dirname(os.path.abspath(__file__))
-TABLA_PATH = os.path.join(DIR, "comisiones_tabla.json")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+TABLA_PATH = os.path.join(BASE_DIR, "comisiones_tabla.json")
 
 _cache_cats  = {}   # texto -> lista de categorias MeLi
 _cache_raiz  = {}   # category_id -> nombre de categoria raiz
