@@ -19,6 +19,12 @@ build/
 venv/
 env/
 
+# ── Estado runtime (generado al cargar Excel) ─────────────────
+src/estado_rubros.json
+
+# ── HTML scrapeado / debug ─────────────────────────────────────
+*.html
+
 # ── Sistema operativo ─────────────────────────────────────────
 .DS_Store
 Thumbs.db
