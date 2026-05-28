@@ -1,14 +1,16 @@
 @echo off
 chcp 65001 > nul
-title Comisiones MeLi Argentina
+title Comisiones MeLi Argentina (Web App)
 
-pip install pandas openpyxl requests -q --disable-pip-version-check 2>nul
+echo Instalando dependencias necesarias...
+pip install -r requirements.txt -q --disable-pip-version-check 2>nul
 
-python app.py
+echo Iniciando aplicacion...
+python -m streamlit run src\web\1_Consulta_Individual.py
 
 if errorlevel 1 (
     echo.
     echo  Hubo un error. Presiona una tecla para ver el detalle.
     pause
-    python app.py
+    python -m streamlit run src\web\1_Consulta_Individual.py
 )
